@@ -1,6 +1,5 @@
 package aula_01_olaMundo;
 
-import Calculadoora.Calculadoora;
 import aula_01_olaMundo.calculadora.Calculadora;
 public class execta_calculadora {
     
