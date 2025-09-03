@@ -7,12 +7,12 @@ public class carro {
     public Integer velocidade;
 
     public void acelerar(){
-        this.velocidade += 5;
+        this.velocidade += 10;
     }
 
     public void frear(){
-        if(velocidade >= 5)
-        this.velocidade -= 5;
+        if(velocidade >= 10)
+        this.velocidade -= 10;
         
         
     }
