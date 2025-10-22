@@ -1,18 +1,18 @@
 public class Emprestimo {
-    private Pessoa pessoa;
+    private TomadorEmprestimo tomadorEmprestimo;
     private Material material;
     private String dataEmprestimo;
     private String dataDevolucao;
 
-    public Emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao) {
-        this.pessoa = pessoa;
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
         this.material = material;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
 
-    public Pessoa getPessoa() {
-        return pessoa;
+    public TomadorEmprestimo getTomadorEmprestimo() {
+        return tomadorEmprestimo;
     }
 
     public Material getMaterial() {
@@ -30,8 +30,8 @@ public class Emprestimo {
     public void exibirDetalhes() {
         System.out.println("Data de Empréstimo: " + dataEmprestimo);
         System.out.println("Data de Devolução: " + dataDevolucao);
-        System.out.println("--- Pessoa ---");
-        pessoa.exibirInfo();
+        System.out.println("--- TomadorEmprestimo ---");
+        tomadorEmprestimo.exibirInfo();
         System.out.println("--- Material ---");
         material.descricao();
     }

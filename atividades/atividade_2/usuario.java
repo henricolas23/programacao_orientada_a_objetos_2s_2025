@@ -1,31 +1,24 @@
-package atividades.atividade_2;
+public class Usuario extends Pessoa{
+    private Integer matricula;
 
-public class atividade_2 {
-
-    public class Usuario extends Pessoa {
-    private int matricula;
-
-    public Usuario(String nome, String email, int matricula) {
+    public Usuario(String nome, String email, Integer matricula){
         super(nome, email);
         this.matricula = matricula;
     }
 
-    public int getMatricula() {
-        return matricula;
+    public Integer getMatricula() {
+        return this.matricula;
     }
 
-    public void setMatricula(int matricula) {
+    public void setMatricula(Integer matricula) {
         this.matricula = matricula;
     }
 
     @Override
     public void exibirInfo() {
-        System.out.println("Usuário");
-        System.out.println("Nome: " + getNome());
-        System.out.println("Email: " + getEmail());
-        System.out.println("Matrícula: " + matricula);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("e-mail: " + this.getEmail());
+        System.out.println("Matrícula: " + this.matricula);
     }
-}
 
-    
 }
